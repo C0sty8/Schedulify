@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<VBox alignment="TOP_CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulify.ui.MapPickerController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <WebView fx:id="webView" prefHeight="600.0" prefWidth="800.0" VBox.vgrow="ALWAYS" />
+    <HBox alignment="CENTER" spacing="20.0">
+        <Label fx:id="coordLabel" text="Select a location " />
+        <Button style="-fx-background-color: #BFC6C4;" mnemonicParsing="false" onAction="#handleSaveLocation" text="Save" />
+    </HBox>
+</VBox>

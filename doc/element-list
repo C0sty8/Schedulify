@@ -1,0 +1,6 @@
+module:Schedulify
+schedulify.authentication
+schedulify.models
+schedulify.service
+schedulify.ui
+schedulify.utils

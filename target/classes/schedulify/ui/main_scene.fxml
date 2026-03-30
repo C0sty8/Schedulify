@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="325.0" prefWidth="462.0" style="-fx-background-color: #EAEFEF;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulify.ui.MainAppController">
+   <children>
+      <Button style="-fx-background-color: #BFC6C4;" layoutX="116.0" layoutY="14.0" mnemonicParsing="false" onAction="#joinSchedule" prefHeight="26.0" prefWidth="52.0" text="Join">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="invitationField" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="101.0" promptText="invitation code..." />
+      <Button style="-fx-background-color: #BFC6C4;" layoutX="14.0" layoutY="163.0" mnemonicParsing="false" onAction="#calendarMakerScene" prefHeight="42.0" prefWidth="150.0" text="Create Calendar">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fx:id="userName" layoutX="14.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.4000000000001">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button style="-fx-background-color: #BFC6C4;" layoutX="14.0" layoutY="284.0" mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="80.0" text="Log out">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fx:id="errorField" fill="RED" layoutX="14.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.4000000000001">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Text>
+      <ScrollPane fitToWidth="true" layoutX="181.0" prefHeight="326.0" prefWidth="281.0">
+        <content>
+          <AnchorPane fx:id="schedulesArea" />
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

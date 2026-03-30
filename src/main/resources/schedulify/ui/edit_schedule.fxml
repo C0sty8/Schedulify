@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="450.0" style="-fx-background-color: #EAEFEF;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulify.ui.EditScheduleController">
+   <children>
+      <ScrollPane fitToWidth="true" layoutX="192.0" prefHeight="400.0" prefWidth="258.0">
+         <content>
+            <VBox fx:id="activitiesViewer" prefHeight="402.0" prefWidth="248.0" spacing="3.0" />
+         </content>
+      </ScrollPane>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editing: ">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="currentEventName" layoutX="66.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="117.60001220703111" />
+      <TextField fx:id="nameField" layoutX="14.0" layoutY="45.0" promptText="New Name" />
+      <Button layoutX="89.0" layoutY="349.0" mnemonicParsing="false" onAction="#deleteActivity" style="-fx-background-color: #BFC6C4;" text="Delete event" textFill="RED" />
+      <Button layoutX="37.0" layoutY="349.0" mnemonicParsing="false" onAction="#saveChanges" style="-fx-background-color: #BFC6C4;" text="Save" />
+      <Text layoutX="10.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starts at">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="10.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ends at">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Text>
+      <ComboBox style="-fx-background-color: #BFC6C4;" fx:id="startHour" layoutX="11.0" layoutY="124.0" prefHeight="26.0" prefWidth="70.0" promptText="Hour" />
+      <ComboBox style="-fx-background-color: #BFC6C4;" fx:id="startMinute" layoutX="84.0" layoutY="124.0" prefHeight="26.0" prefWidth="82.0" promptText="Minute" />
+      <ComboBox style="-fx-background-color: #BFC6C4;" fx:id="endHour" layoutX="11.0" layoutY="183.0" prefHeight="26.0" prefWidth="70.0" promptText="Hour" />
+      <ComboBox style="-fx-background-color: #BFC6C4;" fx:id="endMinute" layoutX="84.0" layoutY="183.0" prefHeight="26.0" prefWidth="82.0" promptText="Minute" />
+      <ComboBox style="-fx-background-color: #BFC6C4;" fx:id="dayPicker" layoutX="8.0" layoutY="237.0" prefHeight="26.0" prefWidth="99.0" promptText="Day" />
+      <Text layoutX="10.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change the day">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="errorField" fill="RED" layoutX="14.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="169.6000122070311">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

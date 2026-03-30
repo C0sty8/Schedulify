@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="402.0" prefWidth="450.0" style="-fx-background-color: #EAEFEF;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulify.ui.ViewScheduleController">
+   <children>
+      <TabPane prefHeight="402.0" prefWidth="451.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Schedule">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutY="1.0" pannable="true" prefHeight="374.0" prefWidth="451.0">
+                           <content>
+                              <HBox fx:id="scheduleViewer" prefHeight="361.0" prefWidth="452.0" spacing="10.0" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Events">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane fitToWidth="true" prefHeight="374.0" prefWidth="451.0">
+                           <content>
+                              <VBox fx:id="eventViewer" prefHeight="374.0" prefWidth="438.0" spacing="3.0" />
+                           </content>
+                        </ScrollPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

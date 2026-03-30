@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulify.ui.CalendarSettingsController">
+   <children>
+      <ScrollPane fitToWidth="true" layoutX="232.0" layoutY="-1.0" prefHeight="400.0" prefWidth="218.0">
+         <content>
+            <VBox fx:id="participantsViewer" prefHeight="400.0" prefWidth="203.0" spacing="2.0">
+               <padding>
+                  <Insets left="2.0" top="2.0" />
+               </padding></VBox>
+         </content>
+      </ScrollPane>
+      <Button style="-fx-background-color: #BFC6C4;" onAction="#onLeave" layoutX="13.0" layoutY="356.0" mnemonicParsing="false" text="Leave" textFill="RED">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button style="-fx-background-color: #BFC6C4;" onAction="#onDeleteCalendar" fx:id="deleteCalendarButton" layoutX="13.0" layoutY="320.0" mnemonicParsing="false" text="Delete Calendar" textFill="RED">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="editorCodeField" editable="false" layoutX="101.0" layoutY="81.0" prefHeight="26.0" prefWidth="124.0" />
+      <Text fx:id="editorCodeText" layoutX="9.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editor Code:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="normalCodeField" editable="false" layoutX="101.0" layoutY="117.0" prefHeight="26.0" prefWidth="124.0" />
+      <Text fx:id="normalCodeText" layoutX="9.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normal Code:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button style="-fx-background-color: #BFC6C4;" onAction="#handleLocationViewer" fx:id="viewLocationButton" layoutX="9.0" layoutY="39.0" mnemonicParsing="false" text="See Location">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button style="-fx-background-color: #BFC6C4;" onAction="#onPromote" fx:id="promoteButton" layoutX="9.0" layoutY="200.0" mnemonicParsing="false" text="Promote">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button style="-fx-background-color: #BFC6C4;" onAction="#onRemoveParticipant" fx:id="removeUserButton" layoutX="8.0" layoutY="237.0" mnemonicParsing="false" text="Remove From Calendar" textFill="RED">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button style="-fx-background-color: #BFC6C4;" onAction="#onDemote" fx:id="demoteButton" layoutX="99.0" layoutY="200.0" mnemonicParsing="false" text="Demote">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

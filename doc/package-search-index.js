@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html","k":"18"},{"m":"Schedulify","l":"schedulify.authentication"},{"m":"Schedulify","l":"schedulify.models"},{"m":"Schedulify","l":"schedulify.service"},{"m":"Schedulify","l":"schedulify.ui"},{"m":"Schedulify","l":"schedulify.utils"}];updateSearchResults();

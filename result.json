@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "eventName": "Conferința de Navigație și Explorare",
+      "eventDate": "2026-03-10",
+      "start": "09:00",
+      "end": "13:00",
+      "location": "0.000000,0.000000"
+    },
+    {
+      "eventName": "Simpozionul Maritim de Primăvară",
+      "eventDate": "2026-03-20",
+      "start": "10:00",
+      "end": "17:00",
+      "location": "0.000000,0.000000"
+    },
+    {
+      "eventName": "Atelier de Monitorizare Oceanografică",
+      "eventDate": "2026-03-28",
+      "start": "14:00",
+      "end": "18:30",
+      "location": "0.000000,0.000000"
+    },
+    {
+      "eventName": "Întâlnirea Planificată a Grupului sdfsgb",
+      "eventDate": "2026-04-05",
+      "start": "11:00",
+      "end": "15:00",
+      "location": "0.000000,0.000000"
+    }
+  ]
+}
