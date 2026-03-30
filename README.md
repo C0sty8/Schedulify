@@ -15,11 +15,6 @@ La fiecare orar pot fi invitați mai mulți participanți, fie cu drepturi de ed
 * conexiunea la baza de date
 * interfata grafica
 
-## Arhitectura
-
-
-![Alt text](documentatie-ghid-utlizare-raport/diagrama1.png)
-
 ## Functionalitati/Exemple utilizare
 * Crearea de orare 
 * Participarea la un orar 
