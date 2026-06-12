@@ -1,8 +1,6 @@
 # Schedulify
-### Lulea Costi Mihaita
 
-## Descriere
-"Schedulify" este o aplicație desktop realizată în JavaFX și conectată la o bază de date SQL, care permite utilizatorilor să creeze și să gestioneze orare personalizate.
+Este o aplicație desktop realizată în JavaFX și conectată la o bază de date SQL, care permite utilizatorilor să creeze și să gestioneze orare personalizate.
 La fiecare orar pot fi invitați mai mulți participanți, fie cu drepturi de editare, fie doar pentru vizualizare, depinzând de tipul de invitație trimis.
 
 ## Obiective
